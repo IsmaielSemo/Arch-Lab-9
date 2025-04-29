@@ -1,3 +1,4 @@
 - The first difference between the two is that the original data memory has a size of [31:0] mem [0:63] while the updated has a size of [31:0] mem [0:1023]. In both cases, we have 32 different locations to right to, but the sizes of these locations are different since the second is byte addrdressable while the first isn't
 - The second difference between the two is that the original does not have a bAddr, while the updated one does. This probably means that the second one is capable of handling branches in the data_memory.
 - The third difference between the two is that the original never stalls, while the second does.
+- The fourth difference is that the updated one reads blocks of data while the original only reads one at a time -> TA said so (first block 0 to 3 second 4 -> 7)
